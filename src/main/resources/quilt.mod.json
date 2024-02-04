@@ -2,24 +2,27 @@
 	"schema_version": 1,
 	"quilt_loader": {
 		"group": "${group}",
-		"id": "example_mod",
+		"id": "sokolovsdream",
 		"version": "${version}",
 		"metadata": {
-			"name": "Mod Name",
-			"description": "A short description of your mod.",
+			"license": "MIT",
+			"name": "Sokolov's Dream",
+			"description": "Mod focusing on void themed game",
 			"contributors": {
-				"Your name here": "Owner"
+				"Your name here": "Kalishak"
 			},
 			"contact": {
 				"homepage": "https://example.com/",
 				"issues": "https://github.com/QuiltMC/quilt-template-mod/issues",
 				"sources": "https://github.com/QuiltMC/quilt-template-mod"
 			},
-			"icon": "assets/example_mod/icon.png"
+			"icon": "assets/sokolovsdream/icon.png"
 		},
 		"intermediate_mappings": "net.fabricmc:intermediary",
 		"entrypoints": {
-			"init": "com.example.example_mod.ExampleMod"
+			"init": "io.github.kalishak.SokolovsDream",
+			"client_init": "io.github.kalishak.client.SokolovsDreamClient",
+			"fabric-datagen": "io.github.kalishak.data.SDDataGenerators"
 		},
 		"depends": [
 			{
@@ -36,5 +39,5 @@
 			}
 		]
 	},
-	"mixin": "example_mod.mixins.json"
+	"mixin": "sokolovsdream.mixins.json"
 }

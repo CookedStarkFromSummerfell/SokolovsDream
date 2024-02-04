@@ -16,18 +16,49 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
+
+	maven {
+		name = 'GeckoLib'
+		url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+		content {
+			includeGroupByRegex("software\\.bernie.*")
+			includeGroup("com.eliotlash.mclib")
+		}
+	}
+}
+
+sourceSets {
+	main {
+		resources {
+			srcDirs += [
+			    'src/main/generated'
+			]
+		}
+	}
 }
 
 loom {
 	// Loom and Loader both use this block in order to gather more information about your mod.
 	mods {
 		// This should match your mod id.
-		"example_mod" {
+		"sokolovsdream" {
 			// Tell Loom about each source set used by your mod here. This ensures that your mod's classes are properly transformed by Loader.
 			sourceSet("main")
 			// If you shade (directly include classes, not JiJ) a dependency into your mod, include it here using one of these methods:
 			// dependency("com.example.shadowedmod:1.2.3")
 			// configuration("exampleShadedConfigurationName")
+		}
+	}
+
+	runs {
+		datagen {
+			inherit server
+			name "Data Generation"
+			vmArg "-Dfabric-api.datagen"
+			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
+			vmArg "-Dfabric-api.datagen.modid=${archives_base_name}"
+
+			runDir "build/datagen"
 		}
 	}
 }
@@ -50,6 +81,9 @@ dependencies {
 	// Quilted Fabric API will automatically pull in the correct QSL version.
 	modImplementation libs.quilted.fabric.api
 	// modImplementation libs.bundles.quilted.fabric.api // If you wish to use Fabric API's deprecated modules, you can replace the above line with this one
+
+	//modImplementation libs.geckolib
+	//modImplementation 'software.bernie.geckolib:geckolib-fabric-1.20.1:4.2.3'
 }
 
 processResources {
