@@ -1,4 +1,4 @@
-package io.github.kalishak.client.render.entity.animations;
+package io.kalishak.sokolovsdream.client.render.entity.animations;
 
 import net.minecraft.client.render.animation.Animation;
 import net.minecraft.client.render.animation.AnimationKeyframe;

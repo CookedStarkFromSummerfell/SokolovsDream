@@ -1,12 +1,10 @@
-package io.github.kalishak.client.render.entity.model;
+package io.kalishak.sokolovsdream.client.render.entity.model;
 
-import io.github.kalishak.client.render.entity.animations.WhaleAnimations;
-import io.github.kalishak.entity.passive.WhaleEntity;
+import io.kalishak.sokolovsdream.client.render.entity.animations.WhaleAnimations;
+import io.kalishak.sokolovsdream.entity.passive.WhaleEntity;
 import net.minecraft.client.model.*;
 import net.minecraft.client.render.entity.model.EntityModelPartNames;
 import net.minecraft.client.render.entity.model.SinglePartEntityModel;
-import net.minecraft.entity.Entity;
-import net.minecraft.util.math.MathHelper;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 
 @ClientOnly

@@ -1,4 +1,4 @@
-package io.github.kalishak.client;
+package io.kalishak.sokolovsdream.client;
 
 import org.quiltmc.loader.api.ModContainer;
 import org.quiltmc.loader.api.minecraft.ClientOnly;

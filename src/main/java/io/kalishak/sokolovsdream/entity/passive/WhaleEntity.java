@@ -1,4 +1,4 @@
-package io.github.kalishak.entity.passive;
+package io.kalishak.sokolovsdream.entity.passive;
 
 import net.minecraft.entity.*;
 import net.minecraft.entity.ai.control.AquaticLookControl;

@@ -1,8 +1,7 @@
-package io.github.kalishak.client;
+package io.kalishak.sokolovsdream.client;
 
-import io.github.kalishak.SokolovsDream;
+import io.kalishak.sokolovsdream.SokolovsDream;
 import net.minecraft.client.render.entity.model.EntityModelLayer;
-import net.minecraft.client.util.ModelIdentifier;
 import net.minecraft.util.Identifier;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
 

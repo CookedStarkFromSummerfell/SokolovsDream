@@ -1,4 +1,4 @@
-package io.github.kalishak;
+package io.kalishak.sokolovsdream;
 
 import net.minecraft.util.Identifier;
 import org.quiltmc.loader.api.ModContainer;

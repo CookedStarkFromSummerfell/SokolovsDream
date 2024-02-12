@@ -1,12 +1,11 @@
-package io.github.kalishak.client.render.entity;
+package io.kalishak.sokolovsdream.client.render.entity;
 
-import io.github.kalishak.SokolovsDream;
-import io.github.kalishak.client.SDModelLayers;
-import io.github.kalishak.client.render.entity.model.WhaleEntityModel;
-import io.github.kalishak.entity.passive.WhaleEntity;
+import io.kalishak.sokolovsdream.SokolovsDream;
+import io.kalishak.sokolovsdream.client.SDModelLayers;
+import io.kalishak.sokolovsdream.client.render.entity.model.WhaleEntityModel;
+import io.kalishak.sokolovsdream.entity.passive.WhaleEntity;
 import net.minecraft.client.render.entity.EntityRendererFactory;
 import net.minecraft.client.render.entity.MobEntityRenderer;
-import net.minecraft.client.render.entity.model.FrogEntityModel;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.util.Identifier;
 import org.quiltmc.loader.api.minecraft.ClientOnly;
